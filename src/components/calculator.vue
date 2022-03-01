@@ -27,6 +27,8 @@
           <button value="" class="w-1/4 mx-4 my-3 bg-yellow-500 rounded-3xl p-5 text-3xl times">x</button>
           <button value="" class="w-1/4 mx-4 my-3 bg-yellow-500 rounded-3xl p-5 text-3xl divide">/</button>
            <button value="" class="w-1/4 mx-4 my-3 bg-yellow-500 rounded-3xl p-5 text-3xl ravno">=</button>
+           <button  value="" class="w-1/4 mx-4 my-3 bg-yellow-500 rounded-3xl p-5 text-3xl expon ">*/</button>
+           
       </div>
     </div>
   </div>

@@ -109,6 +109,16 @@ $(document).ready(function () {
         console.log('Деление');
         $('.first-arr').html(arr1.join('')+ '/');
     });
+    $('.expon').on('click', function () {
+        bool = true;
+        oper = 'expon';
+        console.log("Введите второе число");
+        $('.first-num input').val('');
+        console.log('возведение в степень');
+        $('.first-arr').html(arr1.join('')+ '*/');
+        // не понял как прописать Math.pow в button
+    });
+   
 
 
 
