@@ -122,3 +122,35 @@ button.active {
         }
     }
 }
+// body {
+//     background: url('bg.gif');
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: top;
+// }
+.ship {
+    transition: all 0.3s;
+    position: absolute;
+    z-index: 10;
+    &.left {
+        transform: rotate(-90deg);
+    }
+
+    &.right {
+        transform: rotate(90deg);
+    }
+
+    &.top {
+        transform: rotate(0deg);
+    }
+
+    &.bottom {
+        transform: rotate(180deg);
+    }
+}
+
+.bullet {
+    transform: rotate(-90deg) translate(-50%, 25%);
+    width: 5rem;
+    z-index: 0;
+}

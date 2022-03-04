@@ -1,33 +1,39 @@
 <template>
   <div class="home">
-  <!-- <filters/> -->
+  <filters/>
   <!-- <todolist/> -->
-  <calculator/>
+  <!-- <calculator/> -->
   <!-- <addblock/> -->
   <!-- <calendar/> -->
-  <!-- <test v-bind:transfer= "transferData"/> -->
-   <samsung/>
+  <!-- <test v-bind:transfer= "transferData"/>
+   <samsung/>, -->
+   <!-- <tictac/> -->
+  <!-- <space/> -->
   </div>
 </template>
 
 <script>
-// import filters from '@/components/filters'
+import filters from '@/components/filters'
 // import todolist from '@/components/toDoList'
-import calculator from '@/components/calculator'
+// import calculator from '@/components/calculator'
 // import addblock from '@/components/addblock'
 // import calendar from '@/components/calendar'
 // import test from '@/components/test'
 // import samsung from '@/components/samsung'
+// import tictac from '@/components/tictactoe'
+// import space from '@/components/space'
 export default {
   name: 'Home',
   components: {
-    // filters,
+    filters,
     // todolist,
-    calculator,
+    // calculator,
     // addblock,
     // calendar,
     // test,
-    // samsung
+    // samsung,
+    // tictac,
+    // space
   },
   data(){
     return{
