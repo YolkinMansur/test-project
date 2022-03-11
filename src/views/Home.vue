@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-  <filters/>
+  <!-- <filters/> -->
   <!-- <todolist/> -->
   <!-- <calculator/> -->
   <!-- <addblock/> -->
@@ -9,11 +9,13 @@
    <samsung/>, -->
    <!-- <tictac/> -->
   <!-- <space/> -->
+  <!-- <fetchApi/> -->
+  <!-- <carousel/> -->
   </div>
 </template>
 
 <script>
-import filters from '@/components/filters'
+// import filters from '@/components/filters'
 // import todolist from '@/components/toDoList'
 // import calculator from '@/components/calculator'
 // import addblock from '@/components/addblock'
@@ -22,10 +24,12 @@ import filters from '@/components/filters'
 // import samsung from '@/components/samsung'
 // import tictac from '@/components/tictactoe'
 // import space from '@/components/space'
+//  import fetchApi from '@/components/fetchApi'
+// import carousel from '@/components/carousel'
 export default {
   name: 'Home',
   components: {
-    filters,
+    // filters,
     // todolist,
     // calculator,
     // addblock,
@@ -33,7 +37,9 @@ export default {
     // test,
     // samsung,
     // tictac,
-    // space
+    // space,
+    // fetchApi,
+    // carousel
   },
   data(){
     return{

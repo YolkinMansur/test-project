@@ -167,93 +167,93 @@ $(document).ready(function () {
 //     //     console.log(a);
 //     // })
 
-    var gen = [
-        {
-            "name": "Страна, где ясли дороже университета: как устроено образование в Швейцарии",
-            "date": "21 февраля 2022",
-            "topic": "Рассказываем, как швейцарские дети и их родители выбирают образовательные траектории и какие варианты у них есть.",
-            "category": "Геймдев",
-            "img": "https://248006.selcdn.ru/main/iblock/48c/48cade19af315617e5c40f513442eb6b/cc12aa4f18794399ac0a090e688e1811.png"
-        },
-        {
-            "name": "Не знаем, за что и сколько платим: как IT хочет спасти ЖКХ от коррупции",
-            "date": "21 февраля 2022",
-            "topic": "Почему российские управляющие компании не готовы к внедрению инноваций и почему перемены всё равно неизбежны.",
-            "category": "",
-            "img": "https://248006.selcdn.ru/main/iblock/d9f/d9fc76e2d7d1af240abb1b77ee4645ed/4582f91a3fdbf37a79fe5e63e4d40b29.jpg"
-        },
-        {
-            "name": "Мочалки Мэрилин Монро, мячи‑хлебцы и мармеладный квест: 5 красивых упаковок",
-            "date": "21 февраля 2022",
-            "topic": "Яркое оформление обычных вещей: от стильных латексных перчаток до поп‑арта на бытовых аксессуарах.",
-            "category": "Геймдев",
-            "img": "https://248006.selcdn.ru/main/iblock/1d5/1d5d90cebaf212c5b6cbf266e96f4165/e681388eafa5412fb2dd8b4529f95398.png"
-        },
-        {
-            "name": "Аренда курсов для корпоративного обучения: стоит ли связываться?",
-            "date": "21 февраля 2022",
-            "topic": "ем отличается аренда контента от обычной покупки, в каких случаях это выгодно и при каких условиях подойдёт.",
-            "category": "Геймдев",
-            "img": "https://248006.selcdn.ru/main/iblock/ea9/ea95ff69d62eda0bc7a06d960b372899/768953fb028ab63363a2e06ddebb020f.png"
-        },
-        {
-            "name": "Может ли компания претендовать на весь написанный разработчиком код",
-            "date": "21 февраля 2022",
-            "topic": "Ха! Программисты — не просто гребцы на галерах, а полноправные владельцы кода, который они пишут. Разбираемся вместе с юристом.",
-            "category": "Геймдев",
-            "img": "https://248006.selcdn.ru/main/iblock/c30/c308c8611bbea0ddcf727a349b7a38bc/8f8a66e8ccccc902386f71df5c6142f3.png"
-        },
-        {
-            "name": "Вакансии для дизайнеров. Четвёртая неделя февраля",
-            "date": "21 февраля 2022",
-            "topic": "Каждую неделю мы публикуем самые интересные вакансии и стажировки для дизайнеров. Встречайте свежую подборку!",
-            "category": "Геймдев",
-            "img": "https://248006.selcdn.ru/main/iblock/e4f/e4f98fbc754e4383ebec1f89cbe73ac0/9ea59fc27dcc2d257b1f3834d7f348f7.png"
-        },
-        {
-            "name": "Страна, где ясли дороже университета: как устроено образование в Швейцарии",
-            "date": "21 февраля 2022",
-            "topic": "Рассказываем, как швейцарские дети и их родители выбирают образовательные траектории и какие варианты у них есть.",
-            "category": "Геймдев",
-            "img": "https://248006.selcdn.ru/main/iblock/48c/48cade19af315617e5c40f513442eb6b/cc12aa4f18794399ac0a090e688e1811.png"
-        },
-        {
-            "name": "Не знаем, за что и сколько платим: как IT хочет спасти ЖКХ от коррупции",
-            "date": "21 февраля 2022",
-            "topic": "Почему российские управляющие компании не готовы к внедрению инноваций и почему перемены всё равно неизбежны.",
-            "category": "",
-            "img": "https://248006.selcdn.ru/main/iblock/d9f/d9fc76e2d7d1af240abb1b77ee4645ed/4582f91a3fdbf37a79fe5e63e4d40b29.jpg"
-        },
-        {
-            "name": "Мочалки Мэрилин Монро, мячи‑хлебцы и мармеладный квест: 5 красивых упаковок",
-            "date": "21 февраля 2022",
-            "topic": "Яркое оформление обычных вещей: от стильных латексных перчаток до поп‑арта на бытовых аксессуарах.",
-            "category": "Геймдев",
-            "img": "https://248006.selcdn.ru/main/iblock/1d5/1d5d90cebaf212c5b6cbf266e96f4165/e681388eafa5412fb2dd8b4529f95398.png"
-        },
-        {
-            "name": "Аренда курсов для корпоративного обучения: стоит ли связываться?",
-            "date": "21 февраля 2022",
-            "topic": "ем отличается аренда контента от обычной покупки, в каких случаях это выгодно и при каких условиях подойдёт.",
-            "category": "Геймдев",
-            "img": "https://248006.selcdn.ru/main/iblock/ea9/ea95ff69d62eda0bc7a06d960b372899/768953fb028ab63363a2e06ddebb020f.png"
-        },
-        {
-            "name": "Может ли компания претендовать на весь написанный разработчиком код",
-            "date": "21 февраля 2022",
-            "topic": "Ха! Программисты — не просто гребцы на галерах, а полноправные владельцы кода, который они пишут. Разбираемся вместе с юристом.",
-            "category": "Геймдев",
-            "img": "https://248006.selcdn.ru/main/iblock/c30/c308c8611bbea0ddcf727a349b7a38bc/8f8a66e8ccccc902386f71df5c6142f3.png"
-        },
-        {
-            "name": "Вакансии для дизайнеров. Четвёртая неделя февраля",
-            "date": "21 февраля 2022",
-            "topic": "Каждую неделю мы публикуем самые интересные вакансии и стажировки для дизайнеров. Встречайте свежую подборку!",
-            "category": "Геймдев",
-            "img": "https://248006.selcdn.ru/main/iblock/e4f/e4f98fbc754e4383ebec1f89cbe73ac0/9ea59fc27dcc2d257b1f3834d7f348f7.png"
-        },
+    // var gen = [
+    //     {
+    //         "name": "Страна, где ясли дороже университета: как устроено образование в Швейцарии",
+    //         "date": "21 февраля 2022",
+    //         "topic": "Рассказываем, как швейцарские дети и их родители выбирают образовательные траектории и какие варианты у них есть.",
+    //         "category": "Геймдев",
+    //         "img": "https://248006.selcdn.ru/main/iblock/48c/48cade19af315617e5c40f513442eb6b/cc12aa4f18794399ac0a090e688e1811.png"
+    //     },
+    //     {
+    //         "name": "Не знаем, за что и сколько платим: как IT хочет спасти ЖКХ от коррупции",
+    //         "date": "21 февраля 2022",
+    //         "topic": "Почему российские управляющие компании не готовы к внедрению инноваций и почему перемены всё равно неизбежны.",
+    //         "category": "",
+    //         "img": "https://248006.selcdn.ru/main/iblock/d9f/d9fc76e2d7d1af240abb1b77ee4645ed/4582f91a3fdbf37a79fe5e63e4d40b29.jpg"
+    //     },
+    //     {
+    //         "name": "Мочалки Мэрилин Монро, мячи‑хлебцы и мармеладный квест: 5 красивых упаковок",
+    //         "date": "21 февраля 2022",
+    //         "topic": "Яркое оформление обычных вещей: от стильных латексных перчаток до поп‑арта на бытовых аксессуарах.",
+    //         "category": "Геймдев",
+    //         "img": "https://248006.selcdn.ru/main/iblock/1d5/1d5d90cebaf212c5b6cbf266e96f4165/e681388eafa5412fb2dd8b4529f95398.png"
+    //     },
+    //     {
+    //         "name": "Аренда курсов для корпоративного обучения: стоит ли связываться?",
+    //         "date": "21 февраля 2022",
+    //         "topic": "ем отличается аренда контента от обычной покупки, в каких случаях это выгодно и при каких условиях подойдёт.",
+    //         "category": "Геймдев",
+    //         "img": "https://248006.selcdn.ru/main/iblock/ea9/ea95ff69d62eda0bc7a06d960b372899/768953fb028ab63363a2e06ddebb020f.png"
+    //     },
+    //     {
+    //         "name": "Может ли компания претендовать на весь написанный разработчиком код",
+    //         "date": "21 февраля 2022",
+    //         "topic": "Ха! Программисты — не просто гребцы на галерах, а полноправные владельцы кода, который они пишут. Разбираемся вместе с юристом.",
+    //         "category": "Геймдев",
+    //         "img": "https://248006.selcdn.ru/main/iblock/c30/c308c8611bbea0ddcf727a349b7a38bc/8f8a66e8ccccc902386f71df5c6142f3.png"
+    //     },
+    //     {
+    //         "name": "Вакансии для дизайнеров. Четвёртая неделя февраля",
+    //         "date": "21 февраля 2022",
+    //         "topic": "Каждую неделю мы публикуем самые интересные вакансии и стажировки для дизайнеров. Встречайте свежую подборку!",
+    //         "category": "Геймдев",
+    //         "img": "https://248006.selcdn.ru/main/iblock/e4f/e4f98fbc754e4383ebec1f89cbe73ac0/9ea59fc27dcc2d257b1f3834d7f348f7.png"
+    //     },
+    //     {
+    //         "name": "Страна, где ясли дороже университета: как устроено образование в Швейцарии",
+    //         "date": "21 февраля 2022",
+    //         "topic": "Рассказываем, как швейцарские дети и их родители выбирают образовательные траектории и какие варианты у них есть.",
+    //         "category": "Геймдев",
+    //         "img": "https://248006.selcdn.ru/main/iblock/48c/48cade19af315617e5c40f513442eb6b/cc12aa4f18794399ac0a090e688e1811.png"
+    //     },
+    //     {
+    //         "name": "Не знаем, за что и сколько платим: как IT хочет спасти ЖКХ от коррупции",
+    //         "date": "21 февраля 2022",
+    //         "topic": "Почему российские управляющие компании не готовы к внедрению инноваций и почему перемены всё равно неизбежны.",
+    //         "category": "",
+    //         "img": "https://248006.selcdn.ru/main/iblock/d9f/d9fc76e2d7d1af240abb1b77ee4645ed/4582f91a3fdbf37a79fe5e63e4d40b29.jpg"
+    //     },
+    //     {
+    //         "name": "Мочалки Мэрилин Монро, мячи‑хлебцы и мармеладный квест: 5 красивых упаковок",
+    //         "date": "21 февраля 2022",
+    //         "topic": "Яркое оформление обычных вещей: от стильных латексных перчаток до поп‑арта на бытовых аксессуарах.",
+    //         "category": "Геймдев",
+    //         "img": "https://248006.selcdn.ru/main/iblock/1d5/1d5d90cebaf212c5b6cbf266e96f4165/e681388eafa5412fb2dd8b4529f95398.png"
+    //     },
+    //     {
+    //         "name": "Аренда курсов для корпоративного обучения: стоит ли связываться?",
+    //         "date": "21 февраля 2022",
+    //         "topic": "ем отличается аренда контента от обычной покупки, в каких случаях это выгодно и при каких условиях подойдёт.",
+    //         "category": "Геймдев",
+    //         "img": "https://248006.selcdn.ru/main/iblock/ea9/ea95ff69d62eda0bc7a06d960b372899/768953fb028ab63363a2e06ddebb020f.png"
+    //     },
+    //     {
+    //         "name": "Может ли компания претендовать на весь написанный разработчиком код",
+    //         "date": "21 февраля 2022",
+    //         "topic": "Ха! Программисты — не просто гребцы на галерах, а полноправные владельцы кода, который они пишут. Разбираемся вместе с юристом.",
+    //         "category": "Геймдев",
+    //         "img": "https://248006.selcdn.ru/main/iblock/c30/c308c8611bbea0ddcf727a349b7a38bc/8f8a66e8ccccc902386f71df5c6142f3.png"
+    //     },
+    //     {
+    //         "name": "Вакансии для дизайнеров. Четвёртая неделя февраля",
+    //         "date": "21 февраля 2022",
+    //         "topic": "Каждую неделю мы публикуем самые интересные вакансии и стажировки для дизайнеров. Встречайте свежую подборку!",
+    //         "category": "Геймдев",
+    //         "img": "https://248006.selcdn.ru/main/iblock/e4f/e4f98fbc754e4383ebec1f89cbe73ac0/9ea59fc27dcc2d257b1f3834d7f348f7.png"
+    //     },
        
-    ]
+    // ]
 // var changeIndex = 6;
 // var status = 0;
 // var status2 = 0;
@@ -496,63 +496,81 @@ $(document).ready(function () {
 
 //space игра
 
-// var posX = 800;
-// var posY = 700;
-// $(".ship").css("left", posX);
-// $(".ship").css("top", posY);
+var posX = 800;
+var posY = 700;
+$(".ship").css("left", posX);
+$(".ship").css("top", posY);
 
-// window.addEventListener('keydown', function (event) {
-//     console.log(posX, posY);
-//     if (event.keyCode == 65) {
-//         $('.ship').addClass('left');
-//         posX = posX - 25;
-//         $(".ship").css("left", posX);
-//         $(".ship").css("top", posY);
-//     } else if (event.keyCode == 87) {
-//         $('.ship').addClass('top');
-//         posY = posY - 25;
-//         $(".ship").css("left", posX);
-//         $(".ship").css("top", posY);
-//     } else if (event.keyCode == 83) {
-//         $('.ship').addClass('bottom');
-//         posY = posY + 25;
-//         $(".ship").css("left", posX);
-//         $(".ship").css("top", posY);
-//     } else if (event.keyCode == 68) {
-//         $('.ship').addClass('right');
-//         posX = posX + 25;
-//         $(".ship").css("left", posX);
-//         $(".ship").css("top", posY);
-//     }
-//     if ($('.ship').hasClass("top") && $(".ship").hasClass("left")) {
-//         $('.ship').css('transform', 'rotate(-45deg)');
-//         posX = posX - 45 / 1.4;
-//         posY = posY - 25 / 1.4;
-//         $(".ship").css("left", posX);
-//         $(".ship").css("top", posY);
-//     } else if ($('.ship').hasClass("top") && $(".ship").hasClass("right")) {
-//         $('.ship').css('transform', 'rotate(45deg)');
-//         posX = posX + 45 / 1.4;
-//         posY = posY - 25 / 1.4;
-//         $(".ship").css("left", posX);
-//         $(".ship").css("top", posY);
-//     } else if ($('.ship').hasClass("bottom") && $(".ship").hasClass("left")) {
-//         $('.ship').css('transform', 'rotate(225deg)');
-//         posX = posX - 45 / 1.4;
-//         posY = posY + 25 / 1.4;
-//         $(".ship").css("left", posX);
-//         $(".ship").css("top", posY);
-//     } else if ($('.ship').hasClass("bottom") && $(".ship").hasClass("right")) {
-//         $('.ship').css('transform', 'rotate(135deg)');
-//         posX = posX + 45 / 1.4;
-//         posY = posY + 25 / 1.4;
-//         $(".ship").css("left", posX);
-//         $(".ship").css("top", posY);
-//     };
-// });
-// $('html').on('click', function () {
-//     $(this).append('<img class="bullet" src="/img/bullet.5351763d.png" style="position: absolute; left: ' + posX + 'px' + '; top: ' + posY + 'px;">')
-// })
+window.addEventListener('keydown', function (event) {
+    console.log(posX, posY);
+    if (event.keyCode == 65) {
+        $('.ship').addClass('left');
+        posX = posX - 25;
+        $(".ship").css("left", posX);
+        $(".ship").css("top", posY);
+    } else if (event.keyCode == 87) {
+        $('.ship').addClass('top');
+        posY = posY - 25;
+        $(".ship").css("left", posX);
+        $(".ship").css("top", posY);
+    } else if (event.keyCode == 83) {
+        $('.ship').addClass('bottom');
+        posY = posY + 25;
+        $(".ship").css("left", posX);
+        $(".ship").css("top", posY);
+    } else if (event.keyCode == 68) {
+        $('.ship').addClass('right');
+        posX = posX + 25;
+        $(".ship").css("left", posX);
+        $(".ship").css("top", posY);
+    }
+    if ($('.ship').hasClass("top") && $(".ship").hasClass("left")) {
+        $('.ship').css('transform', 'rotate(-45deg)');
+        posX = posX - 45 / 1.4;
+        posY = posY - 25 / 1.4;
+        $(".ship").css("left", posX);
+        $(".ship").css("top", posY);
+    } else if ($('.ship').hasClass("top") && $(".ship").hasClass("right")) {
+        $('.ship').css('transform', 'rotate(45deg)');
+        posX = posX + 45 / 1.4;
+        posY = posY - 25 / 1.4;
+        $(".ship").css("left", posX);
+        $(".ship").css("top", posY);
+    } else if ($('.ship').hasClass("bottom") && $(".ship").hasClass("left")) {
+        $('.ship').css('transform', 'rotate(225deg)');
+        posX = posX - 45 / 1.4;
+        posY = posY + 25 / 1.4;
+        $(".ship").css("left", posX);
+        $(".ship").css("top", posY);
+    } else if ($('.ship').hasClass("bottom") && $(".ship").hasClass("right")) {
+        $('.ship').css('transform', 'rotate(135deg)');
+        posX = posX + 45 / 1.4;
+        posY = posY + 25 / 1.4;
+        $(".ship").css("left", posX);
+        $(".ship").css("top", posY);
+    };
+});
+// var end = false
+//     var setPos = posY;
+//     var setVar = 0;
+//     $('html').on('click', function () {
+//         setVar += 1;
+//         $(this).append('<img class="bullet ' + setVar + '" src="/img/bullet.5351763d.png" style="position: absolute; left: ' + posX + 'px' + '; top: ' + posY + 'px;">');
+//         setInterval(function () {
+//             if (setPos == 0) {
+//                 end = true;
+//                 console.log(setPos)
+//                 console.log(end)
+//             } else if (end == false) {
+//                 setPos = setPos - 1;
+//                 $('.bullet ' + setVar).css('top', setPos);
+//                 console.log(setPos);
+//             }
+//         }, 1);
+//     })
+       
+    
+
 // window.addEventListener('keyup', function () {
 //     if (event.keyCode == 65) {
 //         $('.ship').removeClass('left');
