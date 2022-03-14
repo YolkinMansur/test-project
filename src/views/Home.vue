@@ -11,10 +11,12 @@
   <!-- <space/> -->
   <!-- <fetchApi/> -->
   <!-- <carousel/> -->
+  <movies/>
   </div>
 </template>
 
 <script>
+import movies from '@/components/movies'
 // import filters from '@/components/filters'
 // import todolist from '@/components/toDoList'
 // import calculator from '@/components/calculator'
@@ -39,7 +41,8 @@ export default {
     // tictac,
     // space,
     // fetchApi,
-    // carousel
+    // carousel,
+    movies
   },
   data(){
     return{
