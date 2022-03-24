@@ -12,10 +12,12 @@
   <!-- <fetchApi/> -->
   <!-- <carousel/> -->
   <movies/>
+  <!-- <times/> -->
   </div>
 </template>
 
 <script>
+  // import times from '@/components/times'
 import movies from '@/components/movies'
 // import filters from '@/components/filters'
 // import todolist from '@/components/toDoList'
@@ -42,7 +44,8 @@ export default {
     // space,
     // fetchApi,
     // carousel,
-    movies
+    movies,
+  // times
   },
   data(){
     return{

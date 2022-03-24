@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import movie from '../components/movie.vue'
+// import times from '../components/times.vue'
 
 Vue.use(VueRouter)
 
@@ -15,7 +16,12 @@ const routes = [
     path: '/:id',
     name: 'Movie',
     component: movie
-  }
+  },
+  // {
+  //   path: '/:id',
+  //   name: 'times',
+  //   component: times
+  // }
 ]
 
 const router = new VueRouter({

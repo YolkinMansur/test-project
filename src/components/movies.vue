@@ -2,7 +2,7 @@
   <div class="container mx-auto pt-10">
     <div
       class="py-8 border-b border-gray-400"
-      v-for="movie of movies"
+      v-for="movie of sendState"
       :key="movie.id"
     >
       <div class="flex items-start">
@@ -43,7 +43,7 @@
     </div>
     <div>
       <div>
-        <form class="mx-auto my-10" action="">
+        <form  class="mx-auto my-10" action="">
         <h1 class="mx-auto text-center text-3xl font-bold">Insert new data</h1>
         <p class="text-xl font-bold">Enter id</p>
           <select v-model="form.id" name="" id="">
@@ -102,6 +102,7 @@
 
 <script>
 import axios from "axios";
+import {mapActions, mapGetters} from 'vuex'
 export default {
   name: "Movies",
   data() {
@@ -123,17 +124,12 @@ export default {
       },
     };
   },
+  computed:mapGetters(['sendState']),
   async mounted() {
-    try {
-      const takeData = await fetch(this.urlMovie);
-      const result = await takeData.json();
-      this.movies.push(...result);
-      console.log(this.movies);
-    } catch (error) {
-      this.errors.push(error);
-    }
+   this.fetchMovies();
   },
   methods: {
+    ...mapActions(['fetchMovies']),
     async sendForm() {
       JSON.parse(this.form.mustSee.toLowerCase());
       try {
